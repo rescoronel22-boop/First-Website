@@ -1,0 +1,25 @@
+html{
+    font-size: 16px
+}
+body{
+    background-color: #333;
+    color:whitesmoke;
+}
+
+.autore {
+    text-align: center; /* Puoi usare center, right, justify o left */
+}
+
+/* Cambia il colore dei link nella colonna di sinistra */
+.colonna-sinistra a {
+    color: #ffffff; /* Testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura di default */
+}
+
+/* Cambia colore quando ci passi sopra con il mouse */
+.colonna-sinistra a:hover {
+    color: #4da6ff; /* Un azzurro chiaro o sottolineatura */
+    text-decoration: underline;
+}
+
+

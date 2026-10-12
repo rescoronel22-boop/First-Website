@@ -1,0 +1,16 @@
+creazione sito
+
+giorno 1:
+imparare html base
+header, paragrafo, liste, link ad altri siti
+
+giorno 2:
+imparare base html base:
+testi base, sfondo, colori, immagini
+
+giorno 3:
+imparare css base: allineamento testo e immagini
+
+giorno 4: web design
+
+girno 5: tema
