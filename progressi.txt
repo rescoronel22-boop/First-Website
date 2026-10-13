@@ -1,16 +1,16 @@
 creazione sito
 
 giorno 1:
-imparare html base
-header, paragrafo, liste, link ad altri siti
+imparare html base: header, paragrafo, liste, link ad altri siti
 
 giorno 2:
-imparare base html base:
-testi base, sfondo, colori, immagini
+imparare html base: testi base, sfondo, colori, immagini
 
 giorno 3:
-imparare css base: allineamento testo e immagini
+imparare css base: allineamento testo
 
-giorno 4: web design
+giorno 4:
+tema "Animali Straordinari"  + categorie
 
-girno 5: tema
+giorno 5: 
+semantic elements, section, unorder list e sottocategorie
