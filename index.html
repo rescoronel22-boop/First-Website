@@ -14,12 +14,66 @@
 
         <hr>
 
-        <div class="main-wrapper">
-            <div class = "layout-orizzontale">
-                <!--colonna destra larga-->
-                <div class="colonna-destra">
-                    <img src="/images/wild animals.jpg" height="250" alt="wild" class="img-wild">
-                    <!--paragrafo prova-->
+        <!--sezione principale che racchiude layout a due colonne-->
+        <section class="layout-sezione">
+
+            <!--barra laterale sinistra: contenuto principale-->
+            <section class="content" >            
+                <br>
+                <img src="/images/wild animals.jpg" height="250" alt="wild" class="img-wild">
+                <h2>Introduzione</h2>
+                <!--paragrafo prova-->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br>
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
+                    deserunt mollit anim id est laborum.
+                </p>          
+            </section>
+ 
+            <!--barra laterale destra categorie-->
+            <aside class="sidebar">
+                <h2>categorie</h2>
+                    <ul>
+                        <li><a href="#aria">Aria</a>
+                            <ul>
+                                <li>cieli aperti e alte quote</li>
+                                <li>foreste</li>
+                            </ul>
+                        </li>
+                        <li><a href="#terra">Terra</a>
+                            <ul>
+                                <li>foreste tropicali e giungle</li>
+                                <li>deserti estremi</li>
+                                <li>tundra e ambienti glaciali</li>
+                                <li>sotteranei e grotte</li>
+                            </ul>
+                        </li>
+                        <li><a href="#acqua">Acqua</a>
+                            <ul>
+                                <li>barriera corallina e acque tropicali</li>
+                                <li>abissi oceanici</li>
+                                <li>fiumi e laghi</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </aside>
+           
+        </section>
+
+        <hr>   
+
+        <p> sezione galleria </p>
+        <!--  <img src="/images/wild animals2.jpg" height= 300 alt="nature" loading="lazy"> -->
+       <!--macro categorie-->
+        <section id="aria">
+            <h2>Animali Aria</h2>
+            <!--sotto categorie-->
+            <section>
+                <h3>cieli aperti e alte quote</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
@@ -29,27 +83,8 @@
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
                         deserunt mollit anim id est laborum.
                     </p>
-                </div>
-            </div>
-        </div>
-
-            <!--colonna sinitra stretta-->
-            <div class="colonna-sinistra">
-                <h3>categorie</h3>
-                <ul>
-                    <li><a href="#aria">Aria</a></li>
-                    <li><a href="#terra">Terra</a></li>
-                    <li><a href="#acqua">Acqua</a></li>
-                </ul>
-
-            </div>
-        <hr>   
-
-        <a href="https://github.com/rescoronel22-boop" style="color: #4da6ff;"" >link website </a>
-        <p> sezione galleria </p>
-        <!--  <img src="/images/wild animals2.jpg" height= 300 alt="nature" loading="lazy"> -->
-        <section id="aria">
-            <h2>Animali Aria</h2>
+                <h3>foreste</h3>
+            </section>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
@@ -60,31 +95,36 @@
                 deserunt mollit anim id est laborum.
             </p>
         </section>
+
+        <hr>
+
         <section id="terra">
             <h2>Animali Terra</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br>
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
-                deserunt mollit anim id est laborum.
-            </p>
+            <!--sotto categorie-->
+            <section>
+                <h3>foreste tropicali e giungle</h3>
+                <h3>deserti estremi</h3>
+                <h3>tundra e ambienti glaciali</h3>
+                <h3>sotterranei e grotte</h3>
+            </section>
         </section>
+
+        <hr>
+        
         <section id="acqua">
             <h2>Animali Acqua</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br>
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
-                deserunt mollit anim id est laborum.
-            </p>
+           <!--sotto categorie-->
+           <section>
+                <h3>barriera corallina e acque tropicali</h3>
+                <h3>abissi oceanici</h3>
+                <h3>fiumi e laghi</h3>
+           </section>
         </section>
 
     </body>
+
     <footer style="text-align: center; margin-top: 50px; color: #777; font-size: 0.85rem;">
         <p>© 2026 Animali Straordinari - Progetto HTML & CSS</p>
     </footer>
+
 </html>
