@@ -6,20 +6,45 @@ body{
     color:whitesmoke;
 }
 
-.autore {
-    text-align: center; /* Puoi usare center, right, justify o left */
+h1{
+    text-align: center;
+}
+
+.autore{
+    text-align: center;
+}
+
+/*Menu principale*/
+.contenitore-principale {
+    display: flex;
+    gap: 40px; /* Spazio tra le due colonne */
+}
+
+.sidebar {
+    width: 250px; /* Larghezza fissa per le categorie */
+    flex-shrink: 0;
+}
+
+.contenuto {
+    flex-grow: 1; /* Occupa tutto lo spazio rimanente a destra */
+}
+
+.img-wild{
+    margin-left: 35px;
 }
 
 /* Cambia il colore dei link nella colonna di sinistra */
-.colonna-sinistra a {
+.sidebar a {
     color: #ffffff; /* Testo bianco */
     text-decoration: none; /* Rimuove la sottolineatura di default */
 }
 
 /* Cambia colore quando ci passi sopra con il mouse */
-.colonna-sinistra a:hover {
+.sidebar a:hover {
     color: #4da6ff; /* Un azzurro chiaro o sottolineatura */
     text-decoration: underline;
 }
+
+
 
 
