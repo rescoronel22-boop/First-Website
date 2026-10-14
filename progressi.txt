@@ -7,10 +7,14 @@ giorno 2:
 imparare html base: testi base, sfondo, colori, immagini
 
 giorno 3:
-imparare css base: allineamento testo
+imparare html bass
 
 giorno 4:
 tema "Animali Straordinari"  + categorie
 
 giorno 5: 
-semantic elements, section, unorder list e sottocategorie
+semantic elements, section, unorder list e categorie habitat
+
+giorno 6:
+CSS base prima parte
+barra laterale sinistra, sottocategorie  e descrizioni, allineamento centrale
