@@ -21,3 +21,6 @@ barra laterale sinistra, sottocategorie  e descrizioni, allineamento centrale
 
 giorno 7:
 introduzione, palette colori, font, immagini
+
+giorno 8: 
+completamento descrizioni e immagini
