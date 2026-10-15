@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="it"> 
 
+<html lang="it"> 
     <head>
         <meta charset = "UTF-8">
         <title>My first website</title>
         <link rel = "icon" href = "/images/html.png" type="image/x.icon">
        <!-- <link rel="stylesheet" href="main.css"> -->
+
+        <!-- Importa Bebas Neue e Oswald da Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <link rel="stylesheet" href="main.css">
-        <h1>Animali Straordinari</h1>
-        <p class="autore">di Ron Earl Son Coronel</p>
-
+            <h1 class="intestazione">Animali Straordinari </h1>
+            <h2 class="intestazione">Attraverso i tre grandi regni</h2>
+            <p class="autore" style="background-color: #F4EFE6;">di Ron Earl Son Coronel</p>
+        
         <hr>
 
         <!--sezione principale che racchiude layout a due colonne-->
@@ -41,7 +47,7 @@
                             </ul>
                         </ul>
                         
-                    <h3>Terra</h3>
+                    <h3><a href="#terra">Terra</a></h3>
                         <ul>
                             <li>foreste tropicali e giungle</li>
                             <li>deserti estremi</li>
@@ -49,7 +55,7 @@
                             <li>sotteranei e grotte</li>
                         </ul>
                         
-                    <h3>Acqua</h3>
+                    <h3><a href="acqua">Acqua</a></h3>
                         <ul>
                             <li>barriera corallina e acque tropicali</li>
                             <li>abissi oceanici</li>
@@ -60,18 +66,23 @@
             <!--barra laterale destra: contenuto principale MAIN-->
             <main class="content" >            
                 <br>
-                <img src="images/wild animals.jpg" height="275" alt="wild" class="img-wild">
+                <div class="collage">
+                    <img src="images/wild animals.jpg" height="350"  alt="wild" class="img-wild">
+                </div>
+
+                
                 <h2>Introduzione</h2>
                 <!--paragrafo prova-->
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br>
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br>
-                    deserunt mollit anim id est laborum.
+                   Benvenuti in Animali Straordinari, un archivio dedicato alla biodiversità più insolita <br>
+                    e affascinante del pianeta. Attraverso le tre dimensioni fondamentali — Aria, Terra e Acqua —  <br>
+                    esploriamo la vita di creature rare, adattamenti estremi e comportamenti unici. <br>
+                    Una guida essenziale per chi desidera scoprire fino a dove può spingersi l'evoluzione della natura.
                 </p>          
+                <p>Dalle vette inaccessibili sorvolate dagli uccelli ad alta quota, alle distese aride dei deserti <br>
+                    e alle profondità abissali dove la luce non giunge mai, ogni ambiente ha plasmato forme di vita eccezionali. <br>
+                    Questo spazio nasce per documentare come l'evoluzione sia riuscita a superare i limiti dell'impossibile, <br>
+                    trasformando condizioni estreme in vere e proprie dimore.</p>
             </main>
 
         </section>
@@ -87,42 +98,50 @@
             <section>
                 <h3>cieli aperti e alte quote</h3>
                     <p>Grifone di Rüppell</p>
+                    <img src="images/grifone.jpg" alt="" class="centro">
                     <p><strong>Perché è straordinario:</strong> È il recordman assoluto di altitudine nel mondo animale.<br>
                         Può volare fino a 11.300 metri d'altezza (dove normalmente volano gli aerei di linea),<br> 
                         grazie a una variante speciale di emoglobina che gli permette di assorbire l'ossigeno <br> 
                         anche nell'aria estremamente rarefatta della stratosfera.</p>
 
                     <p>Albatro urlatore </p>
+                    <img src="images/albatro.png" alt="">
                     <p><strong>Perché è straordinario:</strong> Possiede l'apertura alare più grande al mondo (fino a 3,5 metri). <br> 
                         Può percorrere decine di migliaia di chilometri al di sopra degli oceani senza quasi mai battere le ali, <br> 
                         sfruttando il volo dinamico per sfruttare il vento e risparmiare energia.</p>
 
                     <p>Falco pellegrino</p>
+                    <img src="images/falco pellegrino.jpg" alt="">
                     <p><strong>Perché è straordinario:</strong> È l'animale più veloce del pianeta. In picchiata per cacciare supera i 385 km/h. <br> 
                         Per non farsi scoppiare i polmoni ad alte velocità, le sue narici sono dotate di piccole strutture coniche <br>
                         che regolano la pressione dell'aria.</p>
 
                     <p>Oca indiana</p>
+                    <img src="images/oca indiana.jpg" alt="">
                     <p>Perché è straordinaria: Durante le migrazioni sorvola direttamente la catena dell'Himalaya, <br>    
                        superando l'Everest a quote superiori agli 8.000 metri, sfidando venti gelidi e temperature sotto zero <br> 
                        con un volo battuto costante e faticosissimo.</p>
                     
                 <h3>foreste</h3>
                     <p>Arpia</p>
+                    <img src="images/arpia.jpg" alt="">
                     <p>Perché è straordinaria: Tra i rapaci più grandi e potenti al mondo. Caccia bradipi e scimmie volando a grande velocità <br> 
                         tra i fitti rami della foresta pluviale. I suoi artigli sono lunghi quanto quelli di un orso grizzly (circa 10 cm) <br> 
                         e possono esercitare una pressione devastante.</p>
 
                     <p>Draco volante </p>
+                    <img src="images/draco volante.jpg" alt="">
                     <p>Perché è straordinario: Un piccolo rettile che trasforma la gabbia toracica in un paracadute. Estendendo le costole coperte di membrana (patagio), <br> 
                         è in grado di planare con estrema precisione da un albero all'altro per oltre 60 metri per sfuggire ai predatori.</p>
 
                     <p>Pipistrello della frutta dalla testa a martello </p>
+                    <img src="images/pipistrello dalla testa a martello.jpg" alt="">
                     <p>Perché è straordinario: È il pipistrello più grande dell'Africa equatoriale. I maschi hanno una testa enorme dal muso squadrato e una cassa di risonanza <br> 
                         nell'apparato vocale che occupa metà della cavità corporea, usata per produrre potenti richiami di corteggiamento <br> 
                         che echeggiano nella giungla.</p>
 
                     <p>Volpe volante della Malesia</p>
+                    <img src="images/volpe volante malesia.jpg" alt="">
                     <p>Perché è straordinaria: Uno dei pipistrelli più grandi al mondo, con un'apertura alare che può raggiungere 1,5 metri. <br>
                         Svolge un ruolo ecologico fondamentale nella foresta: si nutre di frutta e nettare, garantendo la impollinazione e <br>
                         la dispersione dei semi di centinaia di specie vegetali.</p>
