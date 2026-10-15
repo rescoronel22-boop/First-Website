@@ -18,3 +18,6 @@ semantic elements, section, unorder list e categorie habitat
 giorno 6:
 CSS base prima parte
 barra laterale sinistra, sottocategorie  e descrizioni, allineamento centrale
+
+giorno 7:
+introduzione, palette colori, font, immagini
