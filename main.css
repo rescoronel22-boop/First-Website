@@ -1,0 +1,167 @@
+html{
+    font-size: 16px
+}
+body{
+    background-color: #F4EFE6;
+    color:whitesmoke;
+}
+
+h1, h2, .intestazione {
+    font-family: 'Montserrat' , serif;
+    font-weight: 700; /* Per averlo in grassetto elegante */
+    letter-spacing: 1px;
+}
+
+.intestazione {
+    text-align: center; /* Allinea al centro tutto ciò che sta nell'header */
+   
+}
+
+.intestazione h1 {
+    color: #1B3B2B; /* Verde foresta */
+    
+}
+
+.intestazione h2 {
+    color: #1B3B2B; /* Verde foresta */
+   
+}
+
+.sidebar {
+    width: 250px; /* Larghezza fissa per le categorie */
+    flex-shrink: 0;
+    background-color: #E8E0D0;
+
+    /* Curve morbide sul lato destro */
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    
+    /* Bordo sottile in giallo dorato sul lato destro */
+    border-right: 3px solid #E9B44C; 
+    
+    padding: 24px 20px;
+    box-shadow: 4px 0px 15px rgba(27, 59, 43, 0.08);
+}
+
+/* 1. Rimuove i pallini generici da tutte le liste della sidebar */
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* 2. LIVELLO 1: Categorie principali (Aria, Terra, Acqua) */
+.sidebar > ul > li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1B3B2B; /* Verde Foresta */
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* 3. LIVELLO 2: Habitat (cieli aperti, foreste) */
+.sidebar ul ul > li {
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-style: serif;
+    color: #555; /* Grigio/Verde desaturato */
+    margin-left: 10px; /* Rientro per staccare dal titolo */
+    margin-top: 8px;
+}
+
+/* 4. LIVELLO 3: Singoli animali (Grifone di Rüppell, ecc.) */
+.sidebar ul ul ul > li {
+    font-size: 0.9rem;
+    font-weight: normal;
+    font-style: normal;
+    color: #1B3B2B;
+    margin-left: 20px; /* Rientro maggiore */
+    padding: 2px 0;
+}
+
+/* Aggiungiamo un tocco elegante ai singoli animali: una freccia dorata */
+.sidebar ul ul ul > li::before {
+    content: "› "; /* Freccia piccola d'accento */
+    color: #E9B44C; /* Giallo Dorato */
+    font-weight: bold;
+}
+
+h1{
+    color: green ;
+    
+}
+
+h2{
+    color: green;
+}
+
+h3{
+    color: green;
+}
+
+p{
+    color: black;
+    background-color: #E8E0D0;
+    font-family: serif;
+}
+
+li{
+    color: black;
+}
+
+.autore{
+    text-align: center;
+}
+
+/*Menu principale*/
+.contenitore-principale {
+    display: flex;
+    gap: 40px; /* Spazio tra le due colonne */
+}
+
+
+
+.contenuto {
+    flex-grow: 1; /* Occupa tutto lo spazio rimanente a destra */
+}
+
+.img-wild{
+    margin-left: 35px;
+}
+
+/* Cambia il colore dei link nella colonna di sinistra */
+.sidebar a {
+    color: green; /* Testo bianco */
+    text-decoration: none; /* Rimuove la sottolineatura di default */
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Cambia colore quando ci passi sopra con il mouse */
+.sidebar a:hover {
+    color: yellowgreen ; /* Un azzurro chiaro o sottolineatura */
+    text-decoration: underline;
+    
+    transform: translateX(6px);
+}
+
+.img-wild {
+    /* Spessore medio (6px), linea continua (solid) e colore bianco */
+    border: 12px solid #E8E0D0;
+    
+    /* Arrotonda gli angoli (più alto è il numero, più saranno tondi) */
+    border-radius: 15px; 
+    
+    /* Un piccolo extra consigliato: un'ombra per far risaltare il bordo bianco sullo sfondo */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    box-shadow: 
+    0 0 0 4px #E9B44C, 
+    0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+p.testo-centrato {
+    text-align: center;
+}
+
+

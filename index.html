@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html lang="it"> 
+    <head>
+        <meta charset = "UTF-8">
+        <title>My first website</title>
+        <link rel = "icon" href = "images/html.png" type="image/x.icon">
+       <!-- <link rel="stylesheet" href="main.css"> -->
+
+       <style>
+            /* Regola universale per tutte le immagini */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Facoltativo: aggiunge spazio sotto ogni immagine */
+        }
+       </style>
+
+        <!-- Importa Bebas Neue e Oswald da Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <link rel="stylesheet" href="main.css">
+            <h1 class="intestazione">Animali Straordinari </h1>
+            <h2 class="intestazione">Attraverso i tre grandi regni</h2>
+            <p class="autore" style="background-color: #F4EFE6;">di Ron Earl Son Coronel</p>
+        
+        <hr>
+
+        <!--sezione principale che racchiude layout a due colonne-->
+        <section class="contenitore-principale">
+ 
+            <!--barra laterale sinistra categorie animali-->
+            <aside class="sidebar">
+                <h2>categorie</h2>
+                    <!--categoria sopra-->
+                    <h3><a href="#aria">Aria</a></h3>
+                        <ul>
+                            <li>cieli aperti e alte quote
+                                <ul>
+                                    <li>Grifone di Rüppell</li>
+                                    <li>Albatro urlatore </li>
+                                    <li>Falco pellegrino </li>
+                                    <li>Oca indiana </li>
+                                    <li>Aquila Reale</li>
+                                </ul>
+                            </li>
+
+                            <li>foreste</li>
+                            <ul>
+                                <li>Arpia </li>
+                                <li>Draco volante </li>
+                                <li>Pipistrello della frutta dalla testa a martello </li>
+                                <li>Volpe volante della Malesia</li>
+                            </ul>
+                        </ul>
+                        
+                    <h3><a href="#terra">Terra</a></h3>
+                        <ul>
+                            <li>foreste tropicali e giungle
+                                <ul>
+                                    <li>formichiere gigante</li>
+                                    <li>capibara</li>
+                                </ul>
+                            </li>
+
+                            <li>deserti estremi
+                                <ul>
+                                    <li>formica argentata del Sahara</li>
+                                    <li>vipera cornuta del deserto</li>
+                                </ul>
+                            </li>
+                            
+                            <li>tundra e ambienti glaciali
+                                <ul>
+                                    <li>volpe artica</li>
+                                    <li>orso polare</li>
+                                </ul>
+                            </li>
+
+                            <li>sotteranei e grotte
+                                <ul>
+                                    <li>proteo</li>
+                                    <li>formica vampiro</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    <h3><a href="#acqua">Acqua</a></h3>
+                        <ul>
+                            <li>barriera corallina e acque tropicali
+                                <ul>
+                                    <li>pesce pappagallo blu</li>
+                                    <li>squalo tappeto wobbegong</li>
+                                </ul>
+                            </li>
+                            
+                            <li>abissi oceanici
+                                <ul>
+                                    <li>calamero vampiro</li>
+                                    <li>pesce diavolo nero/rana pescatrice abissale</li>                                    
+                                </ul>
+                            </li>
+
+                            <li>fiumi e laghi
+                                <ul>
+                                    <li>pesce tigro golia</li>
+                                    <li>axoloti</li>
+                                </ul>
+                            </li>
+                        </ul>
+            </aside>
+
+            <!--barra laterale destra: contenuto principale MAIN-->
+            <main class="content" >            
+                <br>
+                <div class="collage">
+                    <img src="images/wild animals.jpg" height="350"  alt="wild" class="img-wild">
+                </div>
+
+                
+                <h2>Introduzione</h2>
+                <!--paragrafo prova-->
+                <p>
+                   Benvenuti in Animali Straordinari, un archivio dedicato alla biodiversità più insolita 
+                    e affascinante del pianeta. Attraverso le tre dimensioni fondamentali — Aria, Terra e Acqua —  
+                    esploriamo la vita di creature rare, adattamenti estremi e comportamenti unici. 
+                    Una guida essenziale per chi desidera scoprire fino a dove può spingersi l'evoluzione della natura.
+                </p>          
+                <p>Dalle vette inaccessibili sorvolate dagli uccelli ad alta quota, alle distese aride dei deserti 
+                    e alle profondità abissali dove la luce non giunge mai, ogni ambiente ha plasmato forme di vita eccezionali. 
+                    Questo spazio nasce per documentare come l'evoluzione sia riuscita a superare i limiti dell'impossibile, 
+                    trasformando condizioni estreme in vere e proprie dimore.</p>
+            </main>
+
+        </section>
+
+        <hr>   
+
+        <p> sezione galleria </p>
+        <!--  <img src="/images/wild animals2.jpg" height= 300 alt="nature" loading="lazy"> -->
+       <!--macro categorie-->
+        <!--DESCRIZIONI-->
+        <section id="aria">
+            <h2>Animali Aria</h2>
+            <!--sotto categorie-->
+            <section>
+                <h3>cieli aperti e alte quote</h3>
+                    <p class="testo-centrato">Grifone di Rüppell</p>
+                    <img src="images/grifone.jpg" alt="" class="centro">
+                    <p><strong>Perché è straordinario:</strong> È il recordman assoluto di altitudine nel mondo animale.
+                        Può volare fino a 11.300 metri d'altezza (dove normalmente volano gli aerei di linea),
+                        grazie a una variante speciale di emoglobina che gli permette di assorbire l'ossigeno 
+                        anche nell'aria estremamente rarefatta della stratosfera.</p>
+
+                    <p class="testo-centrato">Albatro urlatore </p>
+                    <img src="images/albatro.png" alt="">
+                    <p><strong>Perché è straordinario:</strong> Possiede l'apertura alare più grande al mondo (fino a 3,5 metri). 
+                        Può percorrere decine di migliaia di chilometri al di sopra degli oceani senza quasi mai battere le ali, 
+                        sfruttando il volo dinamico per sfruttare il vento e risparmiare energia.</p>
+
+                    <p class="testo-centrato">Falco pellegrino</p>
+                    <img src="images/falco pellegrino.jpg" alt="">
+                    <p><strong>Perché è straordinario:</strong> È l'animale più veloce del pianeta. In picchiata per cacciare supera i 385 km/h. 
+                        Per non farsi scoppiare i polmoni ad alte velocità, le sue narici sono dotate di piccole strutture coniche <br>
+                        che regolano la pressione dell'aria.</p>
+
+                    <p class="testo-centrato">Oca indiana</p>
+                    <img src="images/oca indiana.jpg" alt="">
+                    <p><strong>Perché è straordinaria: </strong>Durante le migrazioni sorvola direttamente la catena dell'Himalaya,    
+                       superando l'Everest a quote superiori agli 8.000 metri, sfidando venti gelidi e temperature sotto zero 
+                       con un volo battuto costante e faticosissimo.</p>
+                    
+                <h3 >foreste</h3>
+                    <p class="testo-centrato">Arpia</p>
+                    <img src="images/arpia.jpg" alt="">
+                    <p><strong>Perché è straordinaria: </strong>Tra i rapaci più grandi e potenti al mondo. Caccia bradipi e scimmie volando a grande velocità 
+                        tra i fitti rami della foresta pluviale. I suoi artigli sono lunghi quanto quelli di un orso grizzly (circa 10 cm) 
+                        e possono esercitare una pressione devastante.</p>
+
+                    <p class="testo-centrato">Draco volante </p>
+                    <img src="images/draco volante.jpg" alt="">
+                    <p><strong>Perché è straordinario: </strong>Un piccolo rettile che trasforma la gabbia toracica in un paracadute. Estendendo le costole coperte di membrana (patagio), 
+                        è in grado di planare con estrema precisione da un albero all'altro per oltre 60 metri per sfuggire ai predatori.</p>
+
+                    <p class="testo-centrato">Pipistrello della frutta dalla testa a martello </p>
+                    <img src="images/pipistrello dalla testa a martello.jpg" alt="">
+                    <p><strong>Perché è straordinario: </strong>È il pipistrello più grande dell'Africa equatoriale. I maschi hanno una testa enorme dal muso squadrato e una cassa di risonanza 
+                        nell'apparato vocale che occupa metà della cavità corporea, usata per produrre potenti richiami di corteggiamento 
+                        che echeggiano nella giungla.</p>
+
+                    <p class="testo-centrato">Volpe volante della Malesia</p>
+                    <img src="images/volpe volante malesia.jpg" alt="">
+                    <p><strong>Perché è straordinaria: </strong>Uno dei pipistrelli più grandi al mondo, con un'apertura alare che può raggiungere 1,5 metri. 
+                        Svolge un ruolo ecologico fondamentale nella foresta: si nutre di frutta e nettare, garantendo la impollinazione e 
+                        la dispersione dei semi di centinaia di specie vegetali.</p>
+                        
+            </section>
+            
+        </section>
+
+        <hr>
+
+        <section id="terra">
+            <h2>Animali Terra</h2>
+            <!--sotto categorie-->
+            <section>
+                <h3>foreste tropicali e giungle</h3>
+                    <p class="testo-centrato">drago volante</p>
+                    
+                    <p class="testo-centrato">formichiere gigante</p>
+                    <img src="images/formichiere gigante.jpg" alt="">
+                    <p>Perché è straordinario: Privo di denti, ha una lingua ricoperta di saliva appiccicosa lunga fino a 60 cm,
+                         che può estroflettere ben 150 volte al minuto per catturare fino a 30.000 formiche e termiti al giorno.
+                          I suoi artigli anteriori sono così potenti da scalfire persino il cemento o abbattere i termitai più duri.
+                        </p>
+
+                <h3>deserti estremi</h3>
+                    <p class="testo-centrato">formica argentata del Sahara</p>
+                    <img src="images/formica argentata del Sahara.webp" alt="">
+                    <p>Perché è straordinario: È uno degli organismi terrestri più resistenti al calore. Può sopportare temperature corporee 
+                        superiori ai 50 °C. Per evitare i predatori (come le lucertole), esce dal nido solo nelle ore più roventi per 
+                        pochi minuti: i suoi peli d'argento riflettono la luce solare e dissipano il calore, rendendola incredibilmente 
+                        lucida e velocissima.</p>
+
+                    <p class="testo-centrato">vipera cornuta del deserto</p>   
+                    <img src="images/vipera cornuta.jpg" alt=""> 
+                    <p>Perché è straordinario: Si muove con un'incredibile locomozione laterale (sidewinding), toccando la sabbia rovente
+                         solo in pochissimi punti del corpo per non scottarsi. Inoltre, si seppellisce quasi completamente sotto la sabbia
+                          lasciando fuoriuscire solo gli occhi e le sue tipiche "corna", attendendo le prede in un perfetto agguato.</p>
+
+                <h3>tundra e ambienti glaciali</h3>
+                    <p class="testo-centrato">volpe artica</p>
+                    <img src="images/volpe artica.jpg" alt="">
+                    <p>Perché è straordinario: È in grado di sopravvivere a temperature fino a -50 °C. La sua pelliccia è una delle
+                        più calde del regno animale e cambia colore con le stagioni: completamente bianca come la neve in inverno,
+                        e marrone/grigia in estate per mimetizzarsi con la roccia e la vegetazione della tundra.</p>
+        
+                    <p class="testo-centrato">orso polare</p>
+                    <img src="images/orso polare.jpg" alt="">
+                    <p>Perché è straordinario: Nonostante appaia bianco, la sua pelle è in realtà nera (per assorbire il massimo calore
+                        solare) e i suoi peli sono cavi e trasparenti, funzionando come veri e propri condotti di luce e isolanti termici.
+                        È il più grande predatore terrestre del pianeta, capace di nuotare per giorni senza sosta nelle acque gelide.</p>
+
+                <h3>sotterranei e grotte</h3>
+                    <p class="testo-centrato">proteo</p>
+                    <img src="images/proteo.webp" alt="">
+                    <p>Perché è straordinario: Questo anfibio cieco e albino vive completamente al buio nell'acqua delle grotte.
+                        Ha un metabolismo talmente lento da poter sopravvivere senza mangiare per oltre 8-10 anni. Inoltre,
+                        può vivere oltre un secolo ed è in grado di percepire piccolissimi campi elettrici e vibrazioni per orientarsi.</p>
+
+                    <p class="testo-centrato">formica vampiro</p>
+                    <img src="images/formica vampiro.jpg" alt="">
+                    <p>Formica Vampiro (Stigmatomma subterraneum): Vive completamente nel sottosuolo; le regine e le operaie
+                        si nutrono praticando piccoli fori sulle proprie larve per berne l'emolinfatismo senza ucciderle,
+                        un comportamento unico nel regno animale.</p>
+            </section>
+        </section>
+
+        <hr>
+        
+        <section id="acqua">
+            <h2>Animali Acqua</h2>
+           <!--sotto categorie-->
+           <section>
+                <h3>barriera corallina e acque tropicali</h3>
+                <p class="testo-centrato">pesce pappagallo blu</p>
+                <img src="images/pesce pappagallo.jpg" alt="">
+                <p>Perché è straordinario: Con le sue potenti placche dentarie simili a un becco, sbriciola il corallo duro
+                    per nutrirsi di alghe. Digestione e scarto creano la finissima sabbia bianca delle spiagge tropicali: 
+                    un solo esemplare ne produce fino a 400 kg all'anno! Inoltre, di notte produce un bozzolo di muco trasparente 
+                    che lo avvolge completamente per nascondere il proprio odore ai predatori.
+                    </p>
+
+                <p class="testo-centrato">squalo tappeto wobbegong</p> 
+                <img src="images/squalo tappeto.jpg" alt="">
+                <p>Perché è straordinario: Maestro assoluto del mimetismo, questo squalo piatto ha il corpo ricoperto di frange 
+                    carnose e motivi colorati che lo rendono identico a uno scoglio coperto di alghe. Cattura le sue prede a una 
+                    velocità incredibile creando un'aspirazione a vuoto con la bocca spalancata quando i pesci le nuotano ignari 
+                    davanti.
+                </p>                   
+
+                <h3>abissi oceanici</h3>
+                <p class="testo-centrato">calamaro vampiro</p>
+                <img src="images/calamaro vampiro.jpg" alt="">
+                <p>Perché è straordinario: Unico sopravvissuto di un antico ordine di cefalopodi, ha occhi enormi (in proporzione
+                    al corpo) ed è avvolto da una membrana rossa o nera somigliante a un mantello. Non caccia prede vive: 
+                    si nutre di "neve marina" (detriti organici) usando filamentosi tentacoli estensibili. Quando minacciato,
+                    si ribalta nascondendosi nel suo mantello spinoso ed espelle una nuvola di mucillagine bioluminescente per 
+                    accecare i predatori.
+                </p>
+
+                <p class="testo-centrato">pesce diavolo nero</p>
+                <img src="images/pesce diavolo.jpg" alt="">
+                <p>Perché è straordinario: La femmina possiede un'antenna sulla testa dotata di un organo bioluminescente 
+                    (un'esca luminosa creata da batteri simbionti) per attirare le prede nell'oscurità totale. Ma la cosa più 
+                    incredibile è il dimorfismo sessuale: il maschio è minuscolo e vive come un parassita sessuale, fondendosi
+                    letteralmente al corpo della femmina e condividendone la circolazione sanguigna finché non rimane solo una
+                    riserva di sperma.
+                </p>
+
+                <h3>fiumi e laghi</h3>
+                <p class="testo-centrato">pesce tigro golia</p>
+                <img src="images/pesce tigre.jpg" alt="">
+                <p>Perché è straordinario: È uno dei pesci d'acqua dolce più temibili al mondo. Dotato di una muscolatura potente
+                    per nuotare nelle forti correnti, possiede 32 denti affilati come rasoi (simili a quelli di un grande squalo 
+                    bianco) incastonati lungo il margine delle mascelle. È noto per cacciare persino animali di grandi dimensioni 
+                    e piccolissimi coccodrilli.
+                </p>
+
+                <p class="testo-centrato">axoloti</p>
+                <img src="images/axoloti.jpg" alt="">
+                <p>Perché è straordinario: Questo anfibio presenta la neotenia, ovvero raggiunge la maturità sessuale mantenendo per
+                tutta la vita le caratteristiche larvali (come le branchie piumate esterne). Ma la sua capacità incredibile è 
+                la rigenerazione estrema: può far ricrescere non solo arti tagliati e coda, ma persino parti del proprio cuore,
+                degli occhi e del cervello senza lasciare cicatrici.
+                </p>
+           </section>
+        </section>
+
+    </body>
+
+    <footer style="text-align: center; margin-top: 50px; color: #777; font-size: 0.85rem;">
+        <p>© 2026 Animali Straordinari - Progetto HTML & CSS</p>
+    </footer>
+
+</html>
