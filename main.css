@@ -52,44 +52,15 @@ ul {
 }
 
 
-/*paragrafo main*/
-p.introduzione{
- 
-background-color: rgba(240, 230, 210, 0.4) !important; 
 
-/* Mantiene il testo bianco o del colore che preferisci */
-color: #ffffff; 
-
-/* Un po' di padding e angoli arrotondati per rendere il rettangolo più gradevole */
-padding: 12px 16px;
-
+.img-wild{
+    align-content: center;
+    height: 300px;
 }
 
-/* Imposta l'immagine di sfondo */
-.content {
-    /* Imposta l'immagine di sfondo */
-    background-image: url('images/wild animals.jpg');
-    
-    /* Ridimensiona l'immagine per coprire INTERAMENTE tutto lo spazio */
-    background-size: cover;
-    
-    /* Centra l'immagine sia in orizzontale che in verticale */
-    background-position: center;
-    
-    /* Evita che l'immagine si ripeta */
-    background-repeat: no-repeat;
-    
-    /* Aggiunge spazio interno così il testo non tocca i bordi */
-    padding: 40px 20px;
-    
-    /* Assicura un'altezza minima alla sezione per mostrare bene l'immagine */
-    min-height: 80vh;
-    
-    /* Per posizionare il contenuto (testo) in modo pulito */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra il testo verticalmente o usa flex-start per metterlo in alto */
-}
+
+
+
 
 /* ==========================================================================
    3. SEZIONI E HABITAT
