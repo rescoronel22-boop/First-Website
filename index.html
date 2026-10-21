@@ -19,6 +19,11 @@
         }
        </style>
 
+        <!-- file CSS dalla cartella css/ -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/cards.css">
+
         <!-- Importa Bebas Neue e Oswald da Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,95 +37,11 @@
         
         <hr>
 
-        <!--sezione principale che racchiude layout a due colonne-->
-        <section class="contenitore-principale">
- 
-            <!--barra laterale sinistra categorie animali-->
-            <aside class="sidebar">
-                <h2>categorie</h2>
-                    <!--categoria sopra-->
-                    <h3><a href="#aria">Aria</a></h3>
-                        <ul>
-                            <li>cieli aperti e alte quote
-                                <ul>
-                                    <li>Grifone di Rüppell</li>
-                                    <li>Albatro urlatore </li>
-                                    <li>Falco pellegrino </li>
-                                    <li>Oca indiana </li>
-                                    <li>Aquila Reale</li>
-                                </ul>
-                            </li>
-
-                            <li>foreste</li>
-                            <ul>
-                                <li>Arpia </li>
-                                <li>Draco volante </li>
-                                <li>Pipistrello della frutta dalla testa a martello </li>
-                                <li>Volpe volante della Malesia</li>
-                            </ul>
-                        </ul>
-                        
-                    <h3><a href="#terra">Terra</a></h3>
-                        <ul>
-                            <li>foreste tropicali e giungle
-                                <ul>
-                                    <li>formichiere gigante</li>
-                                    <li>capibara</li>
-                                </ul>
-                            </li>
-
-                            <li>deserti estremi
-                                <ul>
-                                    <li>formica argentata del Sahara</li>
-                                    <li>vipera cornuta del deserto</li>
-                                </ul>
-                            </li>
-                            
-                            <li>tundra e ambienti glaciali
-                                <ul>
-                                    <li>volpe artica</li>
-                                    <li>orso polare</li>
-                                </ul>
-                            </li>
-
-                            <li>sotteranei e grotte
-                                <ul>
-                                    <li>proteo</li>
-                                    <li>formica vampiro</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        
-                    <h3><a href="#acqua">Acqua</a></h3>
-                        <ul>
-                            <li>barriera corallina e acque tropicali
-                                <ul>
-                                    <li>pesce pappagallo blu</li>
-                                    <li>squalo tappeto wobbegong</li>
-                                </ul>
-                            </li>
-                            
-                            <li>abissi oceanici
-                                <ul>
-                                    <li>calamero vampiro</li>
-                                    <li>pesce diavolo nero/rana pescatrice abissale</li>                                    
-                                </ul>
-                            </li>
-
-                            <li>fiumi e laghi
-                                <ul>
-                                    <li>pesce tigro golia</li>
-                                    <li>axoloti</li>
-                                </ul>
-                            </li>
-                        </ul>
-            </aside>
-
             <!--barra laterale destra: contenuto principale MAIN-->
             <main class="content" >            
                 <br>
                 <div class="collage">
-                    <img src="images/wild animals.jpg" height="350"  alt="wild" class="img-wild">
+                    <img src="images/wild animals.jpg"  alt="wild" class="img-wild">
                 </div>
 
                 
@@ -138,64 +59,110 @@
                     trasformando condizioni estreme in vere e proprie dimore.</p>
             </main>
 
-        </section>
-
         <hr>   
 
-        <p> sezione galleria </p>
         <!--  <img src="/images/wild animals2.jpg" height= 300 alt="nature" loading="lazy"> -->
-       <!--macro categorie-->
+
+       <!--MACRO CATEGORIE-->
         <!--DESCRIZIONI-->
-        <section id="aria">
+        <section id="aria" class="main-category">
             <h2>Animali Aria</h2>
+
             <!--sotto categorie-->
-            <section>
-                <h3>cieli aperti e alte quote</h3>
-                    <p class="testo-centrato">Grifone di Rüppell</p>
-                    <img src="images/grifone.jpg" alt="" class="centro">
-                    <p><strong>Perché è straordinario:</strong> È il recordman assoluto di altitudine nel mondo animale.
-                        Può volare fino a 11.300 metri d'altezza (dove normalmente volano gli aerei di linea),
-                        grazie a una variante speciale di emoglobina che gli permette di assorbire l'ossigeno 
-                        anche nell'aria estremamente rarefatta della stratosfera.</p>
+            <!--HABITAT 1-->
+            <section class="habitat-group">
+                <h3 id="cieli" class="habitat-title">cieli aperti e alte quote</h3>
 
-                    <p class="testo-centrato">Albatro urlatore </p>
-                    <img src="images/albatro.png" alt="">
-                    <p><strong>Perché è straordinario:</strong> Possiede l'apertura alare più grande al mondo (fino a 3,5 metri). 
-                        Può percorrere decine di migliaia di chilometri al di sopra degli oceani senza quasi mai battere le ali, 
-                        sfruttando il volo dinamico per sfruttare il vento e risparmiare energia.</p>
+                    <!--griglia per animali di questo habitat-->
+                    <ul class="card-grid">
 
-                    <p class="testo-centrato">Falco pellegrino</p>
-                    <img src="images/falco pellegrino.jpg" alt="">
-                    <p><strong>Perché è straordinario:</strong> È l'animale più veloce del pianeta. In picchiata per cacciare supera i 385 km/h. 
-                        Per non farsi scoppiare i polmoni ad alte velocità, le sue narici sono dotate di piccole strutture coniche <br>
-                        che regolano la pressione dell'aria.</p>
+                        <!--scheda 1-->
+                        <li class="card-item">
+                            <details class="animal-card">
+                                <summary>
+                                    <img src="images/grifone.jpg" alt="grifone" class="standard-img">
+                                    <h4 class="testo-centrato">Grifone di Rüppell</h4>
+                                    <span class="click-hint">Clicca per scoprire di più ▼</span>
+                                </summary>
+                                <div class="card-content">
+                                    <p><strong>Perché è straordinario:</strong> È il recordman assoluto di altitudine nel mondo animale.
+                                    Può volare fino a 11.300 metri d'altezza (dove normalmente volano gli aerei di linea),
+                                    grazie a una variante speciale di emoglobina che gli permette di assorbire l'ossigeno 
+                                    anche nell'aria estremamente rarefatta della stratosfera.</p>
+                                </div>
+                            </details>
+                        </li>
 
-                    <p class="testo-centrato">Oca indiana</p>
-                    <img src="images/oca indiana.jpg" alt="">
-                    <p><strong>Perché è straordinaria: </strong>Durante le migrazioni sorvola direttamente la catena dell'Himalaya,    
-                       superando l'Everest a quote superiori agli 8.000 metri, sfidando venti gelidi e temperature sotto zero 
-                       con un volo battuto costante e faticosissimo.</p>
-                    
+                        <!--scheda 2(albatro)-->
+                        <li class="card-item">
+                            <details class="animal-card">
+                                <summary>
+                                    <img src="images/albatro.png" alt="albatro urlatore" class="standard-img">
+                                    <h4 class="testo-centrato">Albatro urlatore </h4>
+                                    <span class="click-hint">Clicca per scoprire di più ▼</span>
+                                </summary>
+                                <div class="card-content">
+                                    <p><strong>Perché è straordinario:</strong> Possiede l'apertura alare più grande al mondo (fino a 3,5 metri). 
+                                    Può percorrere decine di migliaia di chilometri al di sopra degli oceani senza quasi mai battere le ali, 
+                                    sfruttando il volo dinamico per sfruttare il vento e risparmiare energia.</p>
+                                </div>
+                            </details>
+                        </li>
+
+                        <!--scheda 3(falco pellegrino)-->
+                        <li class="card-item">
+                            <details class="animal-card">
+                                <summary>
+                                    <img src="images/falco pellegrino.jpg" alt="falco pellegrino" class="standard-img">
+                                    <h4 class="testo-centrato">Falco pellegrino</h4>
+                                    <span class="click-hint">Clicca per scoprire di più ▼</span>
+                                </summary>
+                                <div class="card-content">
+                                    <p><strong>Perché è straordinario:</strong> È l'animale più veloce del pianeta. In picchiata per cacciare supera i 385 km/h. 
+                                    Per non farsi scoppiare i polmoni ad alte velocità, le sue narici sono dotate di piccole strutture coniche <br>
+                                    che regolano la pressione dell'aria.</p>
+                                </div>
+                            </details>
+                        </li>
+
+                        <!--scheda 4(oca indiana)-->
+                        <li class="card-item">
+                            <details class="animal-card">
+                                <summary>
+                                    <img src="images/oca indiana.jpg" alt="oca indiana" class="standard-img">
+                                    <h4 class="testo-centrato">Oca indiana</h4>
+                                    <span class="click-hint">Clicca per scoprire di più ▼</span>
+                                </summary>
+                                <div class="card-content">
+                                    <p><strong>Perché è straordinaria: </strong>Durante le migrazioni sorvola direttamente la catena dell'Himalaya,    
+                                    superando l'Everest a quote superiori agli 8.000 metri, sfidando venti gelidi e temperature sotto zero 
+                                    con un volo battuto costante e faticosissimo.</p>
+                                </div>
+                            </details>
+                        </li>
+
+                    </ul>
+                     
                 <h3 >foreste</h3>
                     <p class="testo-centrato">Arpia</p>
-                    <img src="images/arpia.jpg" alt="">
+                    <img src="images/arpia.jpg" alt="arpia">
                     <p><strong>Perché è straordinaria: </strong>Tra i rapaci più grandi e potenti al mondo. Caccia bradipi e scimmie volando a grande velocità 
                         tra i fitti rami della foresta pluviale. I suoi artigli sono lunghi quanto quelli di un orso grizzly (circa 10 cm) 
                         e possono esercitare una pressione devastante.</p>
 
                     <p class="testo-centrato">Draco volante </p>
-                    <img src="images/draco volante.jpg" alt="">
+                    <img src="images/draco volante.jpg" alt="draco volante">
                     <p><strong>Perché è straordinario: </strong>Un piccolo rettile che trasforma la gabbia toracica in un paracadute. Estendendo le costole coperte di membrana (patagio), 
                         è in grado di planare con estrema precisione da un albero all'altro per oltre 60 metri per sfuggire ai predatori.</p>
 
                     <p class="testo-centrato">Pipistrello della frutta dalla testa a martello </p>
-                    <img src="images/pipistrello dalla testa a martello.jpg" alt="">
+                    <img src="images/pipistrello dalla testa a martello.jpg" alt="pipistrello dalla testa a martello">
                     <p><strong>Perché è straordinario: </strong>È il pipistrello più grande dell'Africa equatoriale. I maschi hanno una testa enorme dal muso squadrato e una cassa di risonanza 
                         nell'apparato vocale che occupa metà della cavità corporea, usata per produrre potenti richiami di corteggiamento 
                         che echeggiano nella giungla.</p>
 
                     <p class="testo-centrato">Volpe volante della Malesia</p>
-                    <img src="images/volpe volante malesia.jpg" alt="">
+                    <img src="images/volpe volante malesia.jpg" alt="volpe volante">
                     <p><strong>Perché è straordinaria: </strong>Uno dei pipistrelli più grandi al mondo, con un'apertura alare che può raggiungere 1,5 metri. 
                         Svolge un ruolo ecologico fondamentale nella foresta: si nutre di frutta e nettare, garantendo la impollinazione e 
                         la dispersione dei semi di centinaia di specie vegetali.</p>
