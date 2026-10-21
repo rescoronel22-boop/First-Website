@@ -52,12 +52,44 @@ ul {
 }
 
 
+/*paragrafo main*/
+p.introduzione{
+ 
+background-color: rgba(240, 230, 210, 0.4) !important; 
 
-.img-wild{
-    align-content: center;
-    height: 300px;
+/* Mantiene il testo bianco o del colore che preferisci */
+color: #ffffff; 
+
+/* Un po' di padding e angoli arrotondati per rendere il rettangolo più gradevole */
+padding: 12px 16px;
+
 }
 
+    /* Imposta l'immagine di sfondo */
+.content {
+    /* Imposta l'immagine di sfondo */
+    background-image: url('images/wild animals.jpg');
+    
+    /* Ridimensiona l'immagine per coprire INTERAMENTE tutto lo spazio */
+    background-size: cover;
+    
+    /* Centra l'immagine sia in orizzontale che in verticale */
+    background-position: center center;
+    
+    /* Evita che l'immagine si ripeta */
+    background-repeat: no-repeat;
+    
+    /* Aggiunge spazio interno così il testo non tocca i bordi */
+    padding: 40px 20px;
+    
+    /* Assicura un'altezza minima alla sezione per mostrare bene l'immagine */
+    min-height: 80vh;
+    
+    /* Per posizionare il contenuto (testo) in modo pulito */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra il testo verticalmente o usa flex-start per metterlo in alto */
+}
 
 
 
@@ -71,76 +103,6 @@ ul {
    4. GRIGLIA DELLE SCHEDE (.card-grid)
    ========================================================================== */
 
-/* Rimuove i pallini e azzera i margini della griglia */
-.card-grid {
-    list-style: none; /* Rimuove i pallini delle liste */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Dispone gli elementi in orizzontale */
-    gap: 20px; /* Spazio uniforme tra le schede */
-    align-items: stretch; /* Mantiene le schede con la stessa altezza */
-}
-
-/* Stile della singola scheda */
-.card-item {
-   flex: 1; /* Rende tutte le schede della stessa larghezza uniforme */
-    min-width: 0; /* Previene problemi di overflow dell'immagine */
-}
-
-.animal-card {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    height: 100%; /* Occupa tutta l'altezza disponibile */
-    box-sizing: border-box;
-}
-
-/* 4. Immagini con dimensioni standard e proporzioni mantenute */
-.standard-img {
-    width: 100%; /* Occupa l'intera larghezza della scheda */
-    height: 200px; /* Altezza fissa uguale per tutte le immagini */
-    object-fit: contain; /* Mostra tutta l'immagine senza ritagliarla */
-    border-radius: 6px;
-    display: block;
-}
-
-.animal-card:hover {
-    transform: translateY(-3px); /* Effetto sollevamento al passaggio del mouse */
-}
-
-/* Stile della parte cliccabile (copertina) */
-.animal-card summary {
-    cursor: pointer;
-    list-style: none;
-}
-
-/* Nasconde il triangolo di default di summary se dà fastidio */
-.animal-card summary::-webkit-details-marker {
-    display: none;
-}
-
-/* Stile del testo di invito al click */
-.click-hint {
-    display: block;
-    text-align: center;
-    font-size: 0.85rem;
-    color: #666;
-    margin-top: 8px;
-}
-
-/* Spaziatura per il testo nascosto che compare al click */
-.card-content {
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid #eee;
-}
-
-/* Quando il details è aperto (ha l'attributo open), mostra il contenuto */
-details.animal-card[open] .card-content {
-    display: block;
-}
 
 
 /* ==========================================================================
