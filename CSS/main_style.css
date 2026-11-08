@@ -5,16 +5,31 @@
     box-sizing: border-box;
 }
 h1 {
-    color: #1B3B2B;
+    /* color: #1B3B2B; */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     padding-top: 10px;
 }
 h2 {
-    color: #1B3B2B;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+/*BODY*/
+body{
+   /*  background-color: #F4EFE6; */
+    /* color:whitesmoke; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    
+}
+
 
 /*CLASSI*/
 .container {
-    border: 2px dashed #1B3B2B;
+    /*border: 2px dashed #1B3B2B;*/
     font-size: 1rem;
     margin: 1em;
     padding: 1em;
@@ -28,8 +43,20 @@ ul {
     gap: 35px;
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 .btn {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+/*dimensione bottoni*/
+.btn button {
+  min-width: 60px;
+  text-align: center;
+  padding: 1px 20x;
+  cursor: pointer;/*fa apparire la manina*/
 }

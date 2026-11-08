@@ -13,26 +13,25 @@
                 <!--BARRA DI NAVIGAZIONE-->
                 <nav>
                     <ul>
-                        <li>
-                            <a href="#Home" style="color: #1B3B2B;">Home</a>
+                            <a href="#Home" style="color: whitesmoke;">Home</a>
                         </li>
                         <li>
-                            <a href="#About" style="color: #1B3B2B;">Chi Siamo</a>
+                            <a href="#About" style="color: whitesmoke;">Chi Siamo</a>
                         </li>
                         <li>
-                            <a href="#esplora" style="color: #1B3B2B;">Esplora Habitat</a>
+                            <a href="#esplora" style="color: whitesmoke;">Esplora Habitat</a>
                         </li>
                         <li>
-                            <a href="#categorie" style="color: #1B3B2B;">Categorie</a>
+                            <a href="#categorie" style="color: whitesmoke;">Categorie</a>
                         </li>
                         <li>
-                            <a href="#casuale" style="color: #1B3B2B;">Animale Casuale</a>
+                            <a href="#casuale" style="color: whitesmoke;">Animale Casuale</a>
                         </li>
                         <!--aggiungere una barra di ricerca-->
                     </ul>
                 </nav>
             </div>
-
+            <!--TITOLI-->
             <h1>Animali Straordinari</h1>
             <h2>Attraverso i tre grandi regni</h2>
             
@@ -42,16 +41,19 @@
         <!--MAIN CONTENT-->
         <main class="container" > 
             <figure>
-                <img src="images/wild-animals.jpg" alt="wild-animals" height="300">
+                <video width="560" height="315" controls autoplay loop style="border-radius: 8px;">
+                    <source src="video/wild-animals.mp4" type="video/mp4">
+                </video>
+                <!-- <img src="images/wild-animals.jpg" alt="wild-animals" height="300"> -->
             </figure>     
         
             <br>
 
-            <div>
+            <div class="btn">
                 <!--PULSANTI-->
-                <button class="btn"><a href="http://127.0.0.1:5500/aria.html">Aria</a></button>
-                <button class="btn">Terra</button>
-                <button class="btn">Acqua</button> 
+                <button onclick="window.location.href='aria.html'">Aria</button>
+                <button >Terra</button>
+                <button >Acqua</button> 
             </div>
         </main>
 
@@ -59,7 +61,8 @@
 
     <hr>
     
-    <footer style="text-align: center; margin-top: 50px; color: #777; font-size: 0.85rem;">
+    <footer style="text-align: center; margin-top: 50px; color: white; font-size: 0.85rem;">
+        <!--color: #777  -->
         <p>© 2026 Animali Straordinari - Progetto HTML & CSS</p>
     </footer>
 
