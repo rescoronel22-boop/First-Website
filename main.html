@@ -7,21 +7,52 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1 style="text-align: center; color: #1B3B2B;">Animali Straordinari </h1>
-        <h2 style="text-align: center; color: #1B3B2B">Attraverso i tre grandi regni</h2>
-       
+        <header>
+            <!--BARRA DI NAVIGAZIONE-->
+            <nav>
+                <h1 style="color: #1B3B2B;">Animali Straordinari</h1>
+                <h2 style="color: #1B3B2B">Attraverso i tre grandi regni</h2>
+        
+                <ul>
+                    <li>
+                        <a href="#Home" style="color: #1B3B2B;">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About" style="color: #1B3B2B;">Chi Siamo</a>
+                    </li>
+                    <li>
+                        <a href="#esplora" style="color: #1B3B2B;">Esplora Habitat</a>
+                    </li>
+                    <li>
+                        <a href="#categorie" style="color: #1B3B2B;">Categorie</a>
+                    </li>
+                    <li>
+                        <a href="#casuale" style="color: #1B3B2B;">Animale Casuale</a>
+                    </li>
+                    <!--aggiungere una barra di ricerca-->
+                </ul>
+            </nav>
+        </header>
+
         <hr>
-            <!--contenuto principale MAIN-->
-            <main class="content" >       
+            <!--MAIN CONTENT-->
+            <main class="content" > 
+                <figure>
+                     <img src="images/wild-animals.jpg" alt="wild-animals" height="300">
+                </figure>     
+            
+                <br>
+                
                 <!--PULSANTI-->
-                <button class="btn">Aria</button>
+                <button class="btn"><a href="http://127.0.0.1:5500/aria.html">Aria</a></button>
                 <button class="btn">Terra</button>
                 <button class="btn">Acqua</button> 
             </main>
-        <hr>   
 
     </body>
 
+    <hr>
+    
     <footer style="text-align: center; margin-top: 50px; color: #777; font-size: 0.85rem;">
         <p>© 2026 Animali Straordinari - Progetto HTML & CSS</p>
     </footer>

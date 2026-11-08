@@ -4,6 +4,9 @@ raccolta di poesie
 
 categorie principali
 	sottocategorie(habitat)
+menu di navigazione:
+portale informativo: 
+home, chi siamo, esplora habitat, categorie, animale casuale, barra di ricerca 
 
 main:
 	3 pulsanti per ogni categoria:
