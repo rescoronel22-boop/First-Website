@@ -1,0 +1,18 @@
+animali straordinari
+ultimi migliori film del decennio
+raccolta di poesie
+
+categorie principali
+	sottocategorie(habitat)
+
+main:
+	3 pulsanti per ogni categoria:
+	aria
+	terra
+	acqua
+aria:
+terra:
+acqua:
+
+deve essere una cosa interattiva, ma per ora ci limitiamo a dare informazioni
+creare una barra di ricerca
