@@ -23,6 +23,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    /* max-width: 800px; */
+    margin: 0 auto; /* Centra la pagina */
+   /*  padding: 20px; */
     
 }
 
