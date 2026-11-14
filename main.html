@@ -2,7 +2,7 @@
 <html lang="it"> 
     <head>
         <meta charset = "UTF-8">
-        <title>My first website</title>
+        <title>Animali Straordinari | Attraverso i tre grandi regni</title>
         <link rel = "icon" href = "images/html.png" type="image/x.icon">
         <link rel="stylesheet" href="CSS/main_style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +14,19 @@
                 <!--BARRA DI NAVIGAZIONE-->
                 <nav>
                     <ul>
-                            <a href="#Home" style="color: whitesmoke;">Home</a>
+                            <a href="#Home" style="color: white;">Home</a>
                         </li>
                         <li>
-                            <a href="#About" style="color: whitesmoke;">Chi Siamo</a>
+                            <a href="#About" style="color: white;">Chi Siamo</a>
                         </li>
                         <li>
-                            <a href="#esplora" style="color: whitesmoke;">Esplora Habitat</a>
+                            <a href="#esplora" style="color: white;">Esplora Habitat</a>
                         </li>
                         <li>
-                            <a href="#categorie" style="color: whitesmoke;">Categorie</a>
+                            <a href="#categorie" style="color: white;">Categorie</a>
                         </li>
                         <li>
-                            <a href="#casuale" style="color: whitesmoke;">Animale Casuale</a>
+                            <a href="#casuale" style="color: white;">Animale Casuale</a>
                         </li>
                         <!--aggiungere una barra di ricerca-->
                     </ul>
@@ -37,36 +37,29 @@
             <h2>Attraverso i tre grandi regni</h2>
             
         </header>
-
-        <hr>
+        
         <!--MAIN CONTENT-->
         <main class="container" > 
-            <figure>
 
-                <video width="560" height="315" controls autoplay muted loop playsinline style="border-radius: 8px;">
-
-                    <source src="video/wild-animals.mp4" type="video/mp4">
-                </video>
-                <!-- <img src="images/wild-animals.jpg" alt="wild-animals" height="300"> -->
-            </figure>     
-        
-            <br>
+            <!--<img src="images/wild-animals.jpg" alt="wild-animals" height="300"> -->
+            <video width="560" height="315" controls loop playsinline style="border-radius: 8px;">
+                <source src="video/perfect-planet.mp4" type="video/mp4">
+            </video>
 
             <div class="btn">
                 <!--PULSANTI-->
-                <button onclick="window.location.href='aria.html'">Aria</button>
+                <button onclick="window.open('aria.html', '_blank')">Aria</button>
                 <button >Terra</button>
                 <button >Acqua</button> 
             </div>
+
         </main>
 
     </body>
 
-    <hr>
-    
-    <footer style="text-align: center; margin-top: 50px; color: white; font-size: 0.85rem;">
+    <footer style="text-align: center; margin-top: 40px;  color: white; font-size: 0.85rem;">
         <!--color: #777  -->
-        <p>© 2026 Animali Straordinari - Progetto HTML & CSS</p>
+        <p>© 2026 Animali Straordinari - Progetto HTML & CSS | Ron E.S. Coronel</p>
     </footer>
 
 </html>
